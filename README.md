@@ -1,6 +1,6 @@
 # Go Levy
 
-Get your shared household expenses in order!
+Get your shared household expenses in order! Levy because `go-taxes` seems too damn boring...
 
 ### Intention
 
