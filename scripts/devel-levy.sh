@@ -15,4 +15,4 @@ fi
 echo "Setting up feedback loop with UNIT tests"
 
 nix-shell --run "\
-	watchexec --clear --watch './levy' 'cd levy && go test ./...'"
+	watchexec --clear --watch './levy' 'cd levy && go test ./... -v'"

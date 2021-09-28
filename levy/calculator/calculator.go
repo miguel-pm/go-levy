@@ -24,6 +24,10 @@ func Compute(data ComputeData) float64 {
 		if isLast {
 			// if it is the last section add only the remainder
 			fractionQuantity = math.Mod(data.IncomeAmount, float64(data.FractionSize))
+			if fractionQuantity == 0 {
+				// when this happens means that the last fraction of income was exactly the same as data.FractionSize
+				fractionQuantity = float64(data.FractionSize)
+			}
 		} else {
 			fractionQuantity = float64(data.FractionSize)
 		}
